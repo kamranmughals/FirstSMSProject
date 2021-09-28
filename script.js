@@ -1,16 +1,11 @@
 
 
-let addbuttons = document.querySelector(".buttons > .add");
-let display = document.querySelector(".buttons > .display");
-let contentarea = document.querySelector(".content-area")
-
-addbuttons.addEventListener("click", () => {
-    addrecords();
-});
-display.addEventListener("click", () => {
-    showrecords();
-});
-
+let addbuttons = document.querySelector(".button > .add");
+let display = document.querySelector(".display");
+let contentarea = document.querySelector(".content-area");
+let success = document.querySelector(".area-success");
+let show = document.getElementById('hide');
+let frm = document.getElementsByName('input-from')[0];
 let displayed = [];
 let data = [];
 
@@ -27,16 +22,18 @@ function addrecords(){
     }
     let records = data;
     if(records){
-        let newrecords = '<ul> <li>' + sname + '</li> <li>' + sfather + '</li> <li>' + sage + '</li> <li>' + sphone + '</li></ul>';
-        displayed.push(newrecords);
-        contentarea.innerHTML = '<h3> Success!! </h3>';
+        records = '<ul><li id="ans">'+sname+'</li><li id="ans">'+sfather+'</li><li id="ans">'+sage+'</li><li id="ans">'+sphone+'</li></ul>'
+        displayed.push(records);
+        success.innerHTML = '<h4 id="alert" > Student has been Added Successfully!! </h4>';
     } else{
-        contentarea.innerHTML = '<h3> No record found!! </h3>';
+        success.innerHTML = '<h3> No record found!! </h3>';
     }
-   
+    frm.reset();
+    return false;
 }
 function showrecords(){
-    contentarea.innerHTML = "";
+    show.style.display = "block";
+    contentarea.innerHTML = '<span id= "border-round"class="dt">Full name</span><span class="dt">Father Name</span><span class="dt">Age</span><span id="border-round2" class="dt">Roll No</span>'
     if(displayed.length == 0){
     } else{
         for (let row of displayed){

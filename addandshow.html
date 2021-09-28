@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="style.css">
+    <title>SMS System</title>
+<body>
+    <div class="container-area">
+        <div class="heading">
+            <a href="index.html"><h2>Student Management System</h2></a>
+            <h4 id="sub-head">(SMS SYSTEM FOR COLLEGES)</h4>
+        </div>
+            <div class ="input">
+                <form action="" name="input-from" method="POST">
+                <label class="get-details" for="">Student Name*</label>
+                <input class="input-box" id="name"value="" required placeholder="student name">
+                <label class="get-details" for="">Father Name*</label>
+                <input class="input-box" id="father"value="" required placeholder="father name">
+                <label class="get-details" for="">Age*</label>
+                <input class="input-box" id="age" value="" required placeholder="age">
+                <label class="get-details" for="">Phone Number*</label>
+                <input class="input-box" id="telephone" value="" required placeholder="+92 34566724423">
+            </form>
+            </div>
+            <div id="hide"class="display-area">
+                <div class="content-area">
+                </div>
+            </div>
+            <div class="button">
+                <button class="add" onclick="addrecords()">Add Records</button>
+                <button class="display" onclick="showrecords()">Display All</button>
+        </div>
+        <div class="area-success"></div>
+        <div class="back">
+        <a id="back-btn" href="index.html"><span>&#8592; </span>Go Back</a></div>
+    </div>
+    <footer class="foot-area">
+        <h5>&copy; Copyright 2021 Design by Kamran Ahsan, All right reserved</h5>
+    </footer>
+</body>
+        <script src="script.js"></script>
+</html>
+
