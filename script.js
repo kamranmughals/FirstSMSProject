@@ -25,8 +25,9 @@ function addrecords(){
         records = '<ul><li id="ans">'+sname+'</li><li id="ans">'+sfather+'</li><li id="ans">'+sage+'</li><li id="ans">'+sphone+'</li></ul>'
         displayed.push(records);
         success.innerHTML = '<h4 id="alert" > Student has been Added Successfully!! </h4>';
-    } else{
-        success.innerHTML = '<h3> No record found!! </h3>';
+    }
+    else if(records != data){
+        success.innerHTML = '<h3> Sorry Try Again!! </h3>';
     }
     frm.reset();
     return false;

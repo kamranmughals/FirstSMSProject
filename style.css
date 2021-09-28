@@ -3,7 +3,7 @@
     padding: 0;
     font-family: "Poppins";
 }
-
+/* Main Page */
 .container{
     background-image: url(./images/avel-chuklanov-DUmFLtMeAbQ-unsplash.jpg);
     background-repeat: no-repeat;
@@ -52,6 +52,8 @@ a .btn{
     border-radius: 30px;
     backdrop-filter: blur(10px);
     cursor: pointer;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 1px 2px rgba(0, 0,  0, 0.3);
 }
 a{
     box-shadow: 0 2px 4px 0 rgba(0, 0,  0, 0.3);
