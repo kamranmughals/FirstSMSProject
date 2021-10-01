@@ -9,7 +9,7 @@
             <h4 id="sub-head">(SMS SYSTEM FOR COLLEGES)</h4>
         </div>
             <div class ="input">
-                <form action="" name="input-from" method="POST">
+                <form id="registration-form" action="" name="input-from">
                 <label class="get-details" for="">Student Name*</label>
                 <input class="input-box" id="name"value="" placeholder="student name" required>
                 <label class="get-details" for="">Father Name*</label>
@@ -18,6 +18,8 @@
                 <input class="input-box" id="age" value="" placeholder="age"required>
                 <label class="get-details" for="">Phone Number*</label>
                 <input class="input-box" id="telephone" value="" placeholder="+92 34566724423"required>
+                
+                
             </form>
             </div>
             <div id="hide"class="display-area">
@@ -25,9 +27,10 @@
                 </div>
             </div>
             <div class="button">
-                <button class="add" onclick="addrecords()">Add Records</button>
-                <button class="display" onclick="showrecords()">Display All</button>
-        </div>
+                <button type="button" class="add" onclick="addrecords()">Add Records</button>
+                <button type="button" class="display" onclick="showrecords()">Display All</button>
+            </div>
+            
         <div class="area-success"></div>
         <div class="back">
         <a id="back-btn" href="index.html"><span>&#8592; </span>Go Back</a></div>
